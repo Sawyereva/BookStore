@@ -50,6 +50,7 @@ namespace BookStore.Models.ViewModels
                     tag.InnerHtml.Append(i.ToString());
 
                     result.InnerHtml.AppendHtml(tag);
+                    result.InnerHtml.AppendHtml(" ");
                 }
 
                 output.Content.AppendHtml(result.InnerHtml);
